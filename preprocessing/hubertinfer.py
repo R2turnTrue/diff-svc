@@ -11,7 +11,7 @@ from utils.hparams import hparams
 
 
 class Hubertencoder():
-    def __init__(self, pt_path='checkpoints/hubert/hubert_soft.pt'):
+    def __init__(self, pt_path='/content/checkpoints/hubert/hubert_soft.pt'):
         if not 'use_vec' in hparams.keys():
             hparams['use_vec'] = False
         if hparams['use_vec']:
