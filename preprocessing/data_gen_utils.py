@@ -8,12 +8,12 @@ from collections import OrderedDict
 
 import librosa
 import numpy as np
-import parselmouth
-import pyloudnorm as pyln
-import resampy
+#import parselmouth
+#import pyloudnorm as pyln
+#import resampy
 import torch
-import torchcrepe
-import webrtcvad
+#import torchcrepe
+#import webrtcvad
 from scipy.ndimage.morphology import binary_dilation
 from skimage.transform import resize
 import pyworld as world
