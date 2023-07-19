@@ -11,7 +11,8 @@ class NsfHifiGAN(BaseVocoder):
         if device is None:
             device = 'cuda' if torch.cuda.is_available() else 'cpu'
         self.device = device
-        model_path = hparams['vocoder_ckpt']
+        #model_path = hparams['vocoder_ckpt']
+        model_path = '/content/checkpoints/0109_hifigan_bigpopcs_hop128/model_ckpt_steps_1512000.ckpt'
         if os.path.exists(model_path):
             print('| Load HifiGAN: ', model_path)
             self.model, self.h = load_model(model_path, device=self.device)
