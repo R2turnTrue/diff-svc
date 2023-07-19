@@ -12,7 +12,7 @@ from .utils import init_weights, get_padding
 LRELU_SLOPE = 0.1
 
 def load_model(model_path, device='cuda'):
-    config_file = os.path.join(os.path.split(model_path)[0], 'config.json')
+    config_file = os.path.join(os.path.split(model_path)[0], 'config.yaml')
     with open(config_file) as f:
         data = f.read()
 
